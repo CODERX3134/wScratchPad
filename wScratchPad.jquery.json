@@ -9,7 +9,11 @@
     "canvas",
     "html5"
   ],
+<<<<<<< HEAD
   "version": "2.1.0",
+=======
+  "version": "2.0.0",
+>>>>>>> parent of d59ad45... Fix to set not display bg image until fg is fully loaded.
   "author": {
     "name": "Websanova",
     "email": "rob@websanova.com",

@@ -103,8 +103,7 @@
           this.$el.css('backgroundColor', this.options.bg);
         }
         else {
-          this.$el.css('backgroundColor', '');
-          this.$img.attr('src', this.options.bg);
+          this.$img.show().attr('src', this.options.bg).show();
         }
       }
 
@@ -115,7 +114,6 @@
           this.ctx.beginPath();
           this.ctx.rect(0, 0, width, height);
           this.ctx.fill();
-          this.$img.show();
         }
         else {
           // Have to load image before we can use it.
@@ -124,7 +122,6 @@
           .attr('src', this.options.fg)
           .load(function () {
             _this.ctx.drawImage(this, 0, 0, width, height);
-            _this.$img.show();
           });
         }
       }
